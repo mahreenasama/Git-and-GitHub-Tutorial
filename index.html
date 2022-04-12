@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Git and GitHub Tutorial</title>
     <style>
+      
+        /* header -------------------------------------- */
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        header a{
+            display: inline;
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+        }
+        #hspan{
+            padding: 20px;
+        }
+        /* main -------------------------------------- */
         #main{
             width: 70%;
             margin: auto;
@@ -24,9 +41,66 @@
         #official-site{
             color: black;
         }
+        /* footer -------------------------------------- */
+        header, footer{
+            background-color: rgba(0,189,165,255);
+            color: white;
+        } 
+.footer-div1{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-div1 .links{
+    width: 300px;
+    margin-bottom: 20px;
+}
+.links:first-child{
+    margin-right:70px;
+    margin-left:20px;
+}
+.footer-div1 a{
+    display: block;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+}
+hr{
+    width: 70%;
+    margin: auto;
+    color: white;
+}
+.footer-div2{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.footer-div2 i{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+       
+
+
+
     </style>
 </head>
 <body>
+     <!-- header-------------------------------------------------------------------------------- -->
+    <header>
+        <span id="hspan">Git & GitHub </span>
+        <ul>
+            <a href="#main">Tutorial</a>
+            <a href="#about-author">About</a>
+            <a href="#footerr">Contact</a>
+        </ul>
+    </header>
+
+     <!-- main-------------------------------------------------------------------------------- -->
     <div id="main">
         <h1>Git and GitHub Tutorial - Version Control System for Beginners</h1>
         <img src="src/logos.png" alt="logos">
@@ -77,7 +151,42 @@
             <div id="username">git config --global user.name "YOUR_USERNAME"</div>
             <div id="password">git config --global user.email "YOUR_EMAIL"</div>
         </p>
-        
+
+        <div id="about-author">
+
+        </div>
     </div>
+
+     <!-- footer-------------------------------------------------------------------------------- -->
+    <footer id="footerr">
+        <div class="footer-div1">
+            <div class="links">
+            <h4>USEFUL LINKS</h4>
+                <a href="#main">Tutorial</a>
+                <a href="#about-author">About Us</a>
+                <a href="#footerr">Contact Us</a>
+            </div>
+
+            <div class="links">
+            <h4>CONTACT</h4>
+            <a><i class="fa fa-home"></i>  Lahore, Pakistan</a>
+            <a href="mailto:mahreenmehar202@gmail.com"><i class="fa fa-envelope"></i>  mahreenmehar202@gmail.com</a>
+            <a href="https://www.linkedin.com/in/mahreen-asama-2996971b9/" target="_blank"><i class="fa fa-linkedin"></i>  /mahreen-asama-2996971b9</a>
+            </div>
+        </div>
+            <hr>
+            <div class="footer-div2">
+                <div>
+                    &copy; 2022 Copyright: Git & GitHub 
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+
+    </footer>
 </body>
 </html>
