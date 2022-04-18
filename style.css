@@ -1,3 +1,12 @@
+body{
+    background-color: whitesmoke;
+    /* font-family:'Courier New', Courier, monospace; */
+    /* font-family: cursive; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p,div{
+    font-size: 14px;
+}
 /* header -------------------------------------- */
 header{
     display: flex;
@@ -9,10 +18,12 @@ header a{
     padding: 20px;
     text-decoration: none;
     color: white;
+    font-size: 24px;
+    margin-top: -5px;
 }
 #hspan{
     padding: 20px;
-    font-size: 36px;
+    font-size: 40px;
 }
 #hdiv{
     width: 80%;
@@ -27,9 +38,6 @@ header ul{
     background-color: white;
     margin: auto;
 }
-body{
-    background-color: whitesmoke;
-}
 /* main -------------------------------------- */
 #main{
     width: 90%;
@@ -42,9 +50,6 @@ img{
 }
 h1{
     border: 1px solid black;
-}
-p{
-    font-size: large;
 }
 #official-site{
     color: black;
