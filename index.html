@@ -9,7 +9,14 @@
     <title>Git and GitHub Tutorial</title>
    
     <style>
-        
+        .commands{
+            background-color:rgb(56, 55, 55);
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid rgb(13, 13, 46);
+            border-radius: 5px;
+        }
         
     </style>
 </head>
@@ -60,7 +67,7 @@
 
         <h1>What is Git?</h1>
         <p>
-            Git is a version control system which lets you track changes you make to your files over time.<br> 
+            Git is a version control system which lets you locally track changes you make to your files over time.<br> 
             With Git, you can revert to various states of your files (like a time traveling machine). You can 
             also make a copy of your file, make changes to that copy, and then merge these changes to the 
             original copy.
@@ -69,15 +76,16 @@
         <h1>Installation of Git</h1>
         <p>
             In order to use Git, you have to install it on your computer. To do this, you can download the 
-            latest version on the <a href="https://git-scm.com/downloads" id="official-site">official website.</a>
+            latest version on the <a href="https://git-scm.com/downloads" id="official-site" target="_blank">official website.</a>
             <br> After installation, you can verify the current version of git installed on you PC, by running 
             following command on command line:
-            <div id="git-version">git --version</div>. <br>
+            <div id="git-version" class="commands">$ git --version</div><br>
             The next thing you'll need to do is to set your username and email address. Git will use this 
             information to identify who made specific changes to files.<br>
-            To set your username, type and execute these commands:
-            <div id="username">git config --global user.name "YOUR_USERNAME"</div>
-            <div id="password">git config --global user.email "YOUR_EMAIL"</div>
+            <br>To set your username, type and execute these commands: (Make sure to replace "YOUR_USERNAME" and "YOUR_EMAIL" with the values you choose.)
+            <div id="username" class="commands">$ git config --global user.name "YOUR_USERNAME"</div>
+            <div id="password" class="commands">$ git config --global user.email "YOUR_EMAIL"</div>
+            
         </p>
 
         <div id="about-author">
