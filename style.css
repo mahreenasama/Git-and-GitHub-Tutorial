@@ -34,7 +34,8 @@ header ul{
 }
 #outer{
     width: 80%;
-    border: 1px solid black;
+    border: 1px solid white;
+    border-radius: 20px;
     background-color: white;
     margin: auto;
 }
@@ -42,14 +43,14 @@ header ul{
 #main{
     width: 90%;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 img{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
 }
 h1{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 #official-site{
     color: black;
@@ -59,7 +60,7 @@ h1{
 #dp{
     float: left;
     height: 100px;
-    width: 100px;
+    width: 90px;
 }
 #about-author{
     overflow: auto;

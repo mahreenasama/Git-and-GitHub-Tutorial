@@ -17,9 +17,12 @@
             border: 1px solid black;
             border-radius: 5px;
         }
+        #tableimg{
+            margin: auto;
+        }
         .tableimgs{
-            padding-left: 80px;
-            padding-right: 50px;
+            padding: 20px;
+            /* padding-right: 10px; */
         }
         .sp{
             background-color: lightgray;
@@ -47,7 +50,7 @@
 
         <h1>Overview</h1>
         <p>
-            Git and GitHub are two technologies that every developer should learn, irrespective of their field. 
+            <b>Git</b> and <b>GitHub</b> are two technologies that every developer should learn, irrespective of their field. 
             <br>
             This tutorial will help you understand what Git and version control are,
             the basic Git commands you need to know, how you can use its features to boost your work efficiency,
@@ -90,7 +93,7 @@
         <h1>Installation of Git</h1>
         <p>
             In order to use Git, you have to install it on your computer. To do this, you can download the 
-            latest version on the <a href="https://git-scm.com/downloads" id="official-site" target="_blank">official website.</a>
+            latest version on the <a href="https://git-scm.com/downloads" target="_blank">official website.</a>
             <br> After installation, you can verify the current version of git installed on you PC, by running 
             following command on command line:
             <div id="git-version" class="commands">$ git --version</div><br>
@@ -108,30 +111,96 @@
             Let's create a folder on desktop named <span class="sp">Git and GitHub Tutorial</span>.
             Now create a simple text file <span class="sp">sample.txt</span>
             in this folder with some dummy text.
-            <table>
+            <table id="tableimg">
                 <tr>
                     <td><img src="src/folder2.PNG" alt="new folder" style="height: 300px; width: 300px;" class="tableimgs"></td>
                     <td><img src="src/sample2.PNG" alt="sample data" style="height: 300px; width: 300px;" class="tableimgs"></td>
                 </tr>
             </table>
             <br>Now to initialize your project, go to the respective folder's directory in command prompt and 
-            simply run the following command:
-            <div class="commands">$ git init</div>
+            simply run <span class="sp">$ git init</span> command. <br>
             This will tell Git to get ready to start watching your files for every change that occurs. Git 
             creates a new folder named <span class="sp">.git</span> to track your files. It looks like this:<br><br>
-            <div style="text-align: center;"><img src="src/init.png" alt="init" style="height: 200px; width: 800px;"></div>
+            <div style="text-align: center;"><img src="src/init.png" alt="init" style="height: 200px; width: 700px;"></div>
             <br>Now that we have created and initialized our project locally, let's push it to GitHub. 
         </p>
 
         <h1>How to Push a Repository to GitHub</h1>
+        <p>
+            There are some steps that we need to perform in order to push a respository on 
+            github (for the first time) or to push changes (later on).
+        </p>
+        <h2>Step-l Create a GitHub Account</h2>
+        <p>
+            To create your Github account, got to the <a href="https://github.com/" target="_blank">official site</a>.
+        </p>
+        <h2>Step-ll Create a new repsitory</h2>
+        <p>
+            You can click on the + symbol on the top right corner of the page then choose "New repository". 
+            Give your repo a name then scroll down and click on "Create repository".
+        </p>
+        <h2>Step-lll Add and Commit files</h2>
+        <h3>&emsp;&emsp;$ git add .</h3>
+        <p>
+            When we first initialized our project, the file was not being tracked by Git. To do that, we use 
+            this command <span class="sp">git add .</span>  The period or dot that comes after add means all 
+            the files that exist in the repository. If you want to add a specific file, maybe one named 
+            <span class="sp">about.txt</span>, you use <span class="sp">git add about.txt</span> 
+        </p>
+        <h3>&emsp;&emsp;$ git status</h3>
+        <p>
+            Now to check the status of our files, we can use command <span class="sp">git status</span>. 
+            This command tells us about a file is modified or created new.
+        </p>
+        <h3>&emsp;&emsp;$ git commit</h3>
+        <p>
+            After adding the file to local git respository, use <span class="sp">git commit -m "first commit"</span>
+            to finally commit your files and changings in them. -m is shorthand for message while the text inside 
+            the "" is the commit message. 
+        </p>
+        <div style="text-align: center;">
+            <img src="src/added.png" alt="added files" style="height: 380px; width: 700px;">
+        </div>
+        <h2>Step-lV Push respository to GitHub</h2>
+        <p>
+            When you created your new github respository, it directs you to the page containing guidelines to
+            push local git repository on github. Let's say, if you created github repository named <b>Git-Tutorial</b>.
+            <br>Copy and Paste the following commands to run on command line:
+            <div class="commands">
+                $ git branch -M main<br>
+                $ git remote add origin https://github.com/Mahreen-Asama/Git-Tutorial.git<br>
+                $ git push -u origin main
+            </div>
+            <div style="text-align: center;"><img src="src/push.png" alt="push" style="height: 300px; width: 700px;"></div> 
+            <p>
+                The first command git remote add origin <span class="sp">https://github.com/ihechikara/git-and-github-tutorial.git</span> 
+                creates a connection between your local repo and the remote repo on Github. <br>
+                The second command <span class="sp">git branch -M main</span> changes your main branch's name 
+                to "main". The default branch might be created as "master", but "main" is the standard name 
+                for this repo now. <br>
+                The last command <span class="sp">git push -u origin main</span> pushes your repo from your 
+                local device to GitHub. You should get a response similar to this:
+            <div style="text-align: center;"><img src="src/run.png" alt="push" style="height: 250px; width: 700px;"></div> 
+            </p>
+            <p>
+                To better understand this procedure, let us make some changings in out sample.txt file and 
+                check the <span class="sp">git status</span>.
+                After removing point last four lines from sample.txt:
+                Now check git status:
+            <img src="src/after.png" alt="push" style="height: 200px; width: 400px;">
+            <img src="src/changed.png" alt="push" style="height: 200px; width: 400px;">
 
+            </p>
+        </p>
         <!-- about-------------------------------------------- -->
         <div id="about-author">
             <img id="dp" src="src/mehreen2.jpg" alt="profile">
-            Hello, everybody. This is Mahreen Asama. This tutorial is built for new users of git and gitHub.
-            Hope so you enjoyed the tutorial and learned well. Connect with me at
-            <a href="https://github.com/Mahreen-Asama/" target="_blank">Github</a> and 
-            <a href="https://www.linkedin.com/in/mahreen-asama-2996971b9/" target="_blank">linkedin</a>.
+            <p>
+                Hello, everybody. This is Mahreen Asama. This tutorial is built for new users of git and gitHub.
+                Hope so you enjoyed the tutorial and learned well. Connect with me at
+                <a href="https://github.com/Mahreen-Asama/" target="_blank">Github</a> and 
+                <a href="https://www.linkedin.com/in/mahreen-asama-2996971b9/" target="_blank">linkedin</a>.
+            </p>
         </div>
     </div>
     </div>
