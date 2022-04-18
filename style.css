@@ -2,10 +2,10 @@ body{
     background-color: whitesmoke;
     /* font-family:'Courier New', Courier, monospace; */
     /* font-family: cursive; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 p,div{
-    font-size: 14px;
+    /* font-size: 14px; */
 }
 /* header -------------------------------------- */
 header{
@@ -18,7 +18,7 @@ header a{
     padding: 20px;
     text-decoration: none;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     margin-top: -5px;
 }
 #hspan{
@@ -38,6 +38,7 @@ header ul{
     border-radius: 20px;
     background-color: white;
     margin: auto;
+    margin-top: 10px;
 }
 /* main -------------------------------------- */
 #main{
@@ -60,7 +61,7 @@ h1{
 #dp{
     float: left;
     height: 100px;
-    width: 90px;
+    width: 80px;
 }
 #about-author{
     overflow: auto;
