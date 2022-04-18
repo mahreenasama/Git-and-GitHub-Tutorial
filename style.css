@@ -2,6 +2,7 @@
 header{
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 header a{
     display: inline;
@@ -11,10 +12,27 @@ header a{
 }
 #hspan{
     padding: 20px;
+    font-size: 36px;
+}
+#hdiv{
+    width: 80%;
+    margin: auto;
+}
+header ul{
+    float: right;
+}
+#outer{
+    width: 80%;
+    border: 1px solid black;
+    background-color: white;
+    margin: auto;
+}
+body{
+    background-color: whitesmoke;
 }
 /* main -------------------------------------- */
 #main{
-    width: 70%;
+    width: 90%;
     margin: auto;
     border: 1px solid black;
 }
@@ -31,6 +49,17 @@ p{
 #official-site{
     color: black;
 }
+
+/* author -------------------------------------- */
+#dp{
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+#about-author{
+    overflow: auto;
+}
+
 /* footer -------------------------------------- */
 header, footer{
     background-color: rgba(0,189,165,255);
