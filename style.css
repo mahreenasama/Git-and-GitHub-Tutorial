@@ -56,7 +56,17 @@ h1{
 #official-site{
     color: black;
 }
-
+.commands{
+    background-color:rgb(56, 55, 55);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.sp{
+    background-color: lightgray;
+}
 /* author -------------------------------------- */
 #dp{
     float: left;
