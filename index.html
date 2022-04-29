@@ -262,16 +262,33 @@
         <div style="text-align: center;"><img src="src/branchtest.png" alt="log" style="height: 250px; width: 750px;"></div>
         <p>
             Now, as head is pointing towards test branch, lets do some changings in our sample.txt file in 
-            test branch
+            test branch and commit them. <span class="sp">git commit -am "message"</span> is used to add and 
+            commit files in one command.
         </p>
+        <div style="text-align:center">
+            <img src="src/testadd.png" alt="test add" style="height: 250px; width: 350px;">
+            <img src="src/testcommit.png" alt="test commit" style="height: 250px; width: 500px;">
+        </div>
+        <p>
+            Now, to move head (switch) to main branch, use <span class="sp">git checkout main</span> and see the
+            content of your sample.txt file here.
+        </p>
+        <div style="text-align:center">
+            <img src="src/switchmain.png" alt="switch to main" style="height: 200px; width: 500px;">
+            <img src="src/mainsample.png" alt="main content" style="height: 200px; width: 350px;">
+        </div>
         <h3>&emsp;&emsp;git merge</h3>
         <p>
-            After adding the file to local git respository, use <span class="sp">git commit -m "first commit"</span>
-            to finally commit your files and changings in them. -m is shorthand for message while the text inside 
-            the "" is the commit message. 
+            We san see above the main branch sample.txt has no changings in it. It is because we haven't merged
+            test branch and main branch yet.<br>
+            To merge them, checkout to the main branch and use <span class="sp">git merge test</span> command.
+            <br>(NOTE: Resolve merge conflict if any raises here.)
         </p>
-        <h3>&emsp;&emsp;Delete a branch</h3>
-
+        <div style="text-align: center;"><img src="src/merge.png" alt="merge" style="height: 150px; width: 700px;"></div>
+        <h3>&emsp;&emsp;git branch delete</h3>
+        <p>
+            Use <span class="sp">git branch -D [branch name]</span> to delete the branch you want.
+        </p>
 
         <!-- conclusion----------------------- -->
         <h1>Conclusion</h1>
