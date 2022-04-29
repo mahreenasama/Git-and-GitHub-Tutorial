@@ -111,17 +111,15 @@
             Let's create a folder on desktop named <span class="sp">Git and GitHub Tutorial</span>.
             Now create a simple text file <span class="sp">sample.txt</span>
             in this folder with some dummy text.
-            <table id="tableimg">
-                <tr>
-                    <td><img src="src/folder.png" alt="new folder" style="height: 300px; width: 300px;" class="tableimgs"></td>
-                    <td><img src="src/sample.png" alt="sample data" style="height: 300px; width: 300px;" class="tableimgs"></td>
-                </tr>
-            </table>
+            <div style="text-align: center;">
+                <img src="src/folder.png" alt="new folder" style="height: 300px; width: 300px;">
+                <img src="src/sample.png" alt="sample data" style="height: 300px; width: 350px;">
+            </div>
             <br>Now to initialize your project, go to the respective folder's directory in command prompt and 
             simply run <span class="sp">$ git init</span> command. <br>
             This will tell Git to get ready to start watching your files for every change that occurs. Git 
             creates a new folder named <span class="sp">.git</span> to track your files. It looks like this:<br><br>
-            <div style="text-align: center;"><img src="src/init.png" alt="init" style="height: 200px; width: 700px;"></div>
+            <div style="text-align: center;"><img src="src/init.png" alt="init" style="height: 250px; width: 700px;"></div>
             <br>Now that we have created and initialized our project locally, let's push it to GitHub. 
         </p>
 
@@ -159,7 +157,7 @@
             the "" is the commit message. 
         </p>
         <div style="text-align: center;">
-            <img src="src/added.png" alt="added files" style="height: 380px; width: 700px;">
+            <img src="src/added.png" alt="added files" style="height: 400px; width: 800px;">
         </div>
         <h2>Step-lV Push respository to GitHub</h2>
         <p>
@@ -180,7 +178,7 @@
                 for this repo now. <br>
                 The last command <span class="sp">git push -u origin main</span> pushes your repo from your 
                 local device to GitHub. You should get a response similar to this:
-            <div style="text-align: center;"><img src="src/run.png" alt="push" style="height: 250px; width: 700px;"></div> 
+            <div style="text-align: center;"><img src="src/run.png" alt="push" style="height: 250px; width: 750px;"></div> 
             </p>
             <h3>&emsp;&emsp;Modifications in File</h3>
             <p>
@@ -204,28 +202,30 @@
         <p>
             Several git operations available, some famous are git clone, Branching, Merging, git pull, delete
         </p>
-        <h2>Git Clone</h2>
+        <h2>Clone a GitHub Repository</h2>
         <p>
             Create a new folder on desktop named 'another user'. Go to your github repository, copy its URL 
-            and run <span class="sp">git clone [url]</span> command on command line. Your github repository 
+            and run the command <span class="sp">git clone [url]</span> on command line. Your github repository 
             will be available locally now.
         </p>
-        <div style="text-align: center;"><img src="src/clone.png" alt="clone"></div>
-        <h3>&emsp;&emsp;Make changes at another local repository</h3>
+        <div style="text-align: center;"><img src="src/clone.png" alt="clone" style="height: 200px; width: 700px;"></div>
+        <h3>&emsp;&emsp;Make changes at two different repositories</h3>
         <p>
             Lets say we edited our txt file in local repository of 'another user' and pushed it to github.
+            Then we edited same line in our previous local repository.
         </p>
-        <div style="text-align: center;"><img src="src/anotherchanged.png" alt="edited" style="height: 300px; width: 600px;"></div>
-        <h3>&emsp;&emsp;Make changes at previous local repository</h3>
+        <div style="text-align: center;">
+            <img src="src/anotherchanged.png" alt="another changed" style="height: 250px; width: 450px;">
+            <img src="src/localchanged.png" alt="local changed" style="height: 250px; width: 450px;">
+        </div>
         <p>
-            Now, if we try to make changes in txt file of our previous local repository, lets say added an new
-            point "create new repository" and try to push it to github, it will give us some error that our 
-            current repository is not synchronized with the remote one.
+            Now, if we try to push it to github, it will give us some error that our current repository is 
+            not synchronized with the remote one.
         </p>
         <div style="text-align: center;"><img src="src/pushtry.png" alt="push try" style="height: 400px; width: 800px;"></div>
         <p>
             To resolve this issue, we will use <span class="sp">git pull</span> command.<br>
-            But in this case, it will raise <b>Merge Conflict</b> in both the changings done in txt file.
+            But in this case, it will raise <b>Merge Conflict</b> for both the changings done in txt file.
         </p>
         <h2>Merge Conflict</h2>
         <p>
@@ -233,8 +233,8 @@
             Then git gets confused which changings to keep and which to discard.
         </p>
         <div style="text-align: center;">
-            <img src="src/conflict.png" alt="merge conflict" style="height: 200px; width: 500px;">
-            <img src="src/txtconflict.png" alt="txt conflict" style="height: 200px; width: 400px;">
+            <img src="src/conflict.png" alt="merge conflict" style="height: 250px; width: 500px;">
+            <img src="src/txtconflict.png" alt="txt conflict" style="height: 250px; width: 400px;">
         </div>
         <h3>&emsp;&emsp;Resolve merge conflict</h3>
         <p>
@@ -253,10 +253,10 @@
 
         <!-- about-------------------------------------------- -->
         <div id="about-author">
-            <h2>About me</h2>
+            <h3>About the Author</h3>
             <img id="dp" src="src/mehreen2.jpg" alt="profile">
             <p>
-                Hello, everybody. This is Mahreen Asama. This tutorial is built for new users of git and gitHub.
+                >Hello, everybody. This is Mahreen Asama. This tutorial is built for new users of git and gitHub.
                 Hope so you enjoyed the tutorial and learned well. Connect with me at
                 <a href="https://github.com/Mahreen-Asama/" target="_blank">Github</a> and 
                 <a href="https://www.linkedin.com/in/mahreen-asama-2996971b9/" target="_blank">linkedin</a>.
