@@ -45,6 +45,7 @@
             <li>Create and Initialize a Project in Git</li>
             <li>Push a Repository to GitHub</li>
             <li>Git Operations and Commands</li>
+            <li>Conclusion</li>
         </ul>
 
         <h1>What is Version Control System (VCS)?</h1>
@@ -118,19 +119,19 @@
             Give your repo a name then scroll down and click on "Create repository".
         </p>
         <h2>Step-lll Add and Commit files</h2>
-        <h3>&emsp;&emsp;$ git add .</h3>
+        <h3>&emsp;&emsp;git add</h3>
         <p>
             When we first initialized our project, the file was not being tracked by Git. To do that, we use 
             this command <span class="sp">git add .</span>  The period or dot that comes after add means all 
             the files that exist in the repository. If you want to add a specific file, maybe one named 
             <span class="sp">about.txt</span>, you use <span class="sp">git add about.txt</span> 
         </p>
-        <h3>&emsp;&emsp;$ git status</h3>
+        <h3>&emsp;&emsp;git status</h3>
         <p>
             Now to check the status of our files, we can use command <span class="sp">git status</span>. 
             This command tells us about a file is modified or created new.
         </p>
-        <h3>&emsp;&emsp;$ git commit</h3>
+        <h3>&emsp;&emsp;git commit</h3>
         <p>
             After adding the file to local git respository, use <span class="sp">git commit -m "first commit"</span>
             to finally commit your files and changings in them. -m is shorthand for message while the text inside 
@@ -242,6 +243,40 @@
             With branches, you can create a copy of a file you would like to work on without messing up the 
             original copy. You can either merge these changes to the original copy or just let the branch 
             remain independent. 
+        </p>
+        <h3>&emsp;&emsp;git branch</h3>
+        <p>
+            <span class="sp">git branch</span> command gives you the list of branches you currently have in a 
+            particular repository. It aslo highlights the brach in green color towards which head currenlty points.
+        </p>
+        <h3>&emsp;&emsp;git check</h3>
+        <p>
+            To create a new branch, run this command: <span class="sp">git checkout -b test</span>.<br>
+            <ul>
+                <li><span class="sp">checkout</span> tells Git it is supposed to switch to a new branch.</li>
+                <li><span class="sp">-b</span> tells Git to create a new branch.</li>
+                <li><span class="sp">test</span> is the name of the branch to be created and switched to.</li>
+            </ul>
+            Here is the response you should get:
+        </p>
+        <div style="text-align: center;"><img src="src/branchtest.png" alt="log" style="height: 250px; width: 750px;"></div>
+        <h3>&emsp;&emsp;git merge</h3>
+        <p>
+            After adding the file to local git respository, use <span class="sp">git commit -m "first commit"</span>
+            to finally commit your files and changings in them. -m is shorthand for message while the text inside 
+            the "" is the commit message. 
+        </p>
+        <h3>&emsp;&emsp;Delete a branch</h3>
+
+
+        <!-- conclusion----------------------- -->
+        <h1>Conclusion</h1>
+        <p>
+            This article covered the basic commands that'll help get you started using Git. We also started 
+            learning how to use GitHub. <br>
+            You should know that these are not all the commands that exist in Git – so feel free to do more 
+            research to learn more commands and their uses.<br>
+            Thank You!
         </p>
         <!-- about-------------------------------------------- -->
         <hr style="width:100%">
