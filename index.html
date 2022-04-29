@@ -204,6 +204,53 @@
         <p>
             Several git operations available, some famous are git clone, Branching, Merging, git pull, delete
         </p>
+        <h2>Git Clone</h2>
+        <p>
+            Create a new folder on desktop named 'another user'. Go to your github repository, copy its URL 
+            and run <span class="sp">git clone [url]</span> command on command line. Your github repository 
+            will be available locally now.
+        </p>
+        <div style="text-align: center;"><img src="src/clone.png" alt="clone"></div>
+        <h3>&emsp;&emsp;Make changes at another local repository</h3>
+        <p>
+            Lets say we edited our txt file in local repository of 'another user' and pushed it to github.
+        </p>
+        <div style="text-align: center;"><img src="src/anotherchanged.png" alt="edited" style="height: 300px; width: 600px;"></div>
+        <h3>&emsp;&emsp;Make changes at previous local repository</h3>
+        <p>
+            Now, if we try to make changes in txt file of our previous local repository, lets say added an new
+            point "create new repository" and try to push it to github, it will give us some error that our 
+            current repository is not synchronized with the remote one.
+        </p>
+        <div style="text-align: center;"><img src="src/pushtry.png" alt="push try" style="height: 400px; width: 800px;"></div>
+        <p>
+            To resolve this issue, we will use <span class="sp">git pull</span> command.<br>
+            But in this case, it will raise <b>Merge Conflict</b> in both the changings done in txt file.
+        </p>
+        <h2>Merge Conflict</h2>
+        <p>
+            Merge conflict raises when we edit same line of code from multiple repositories and try to push it.
+            Then git gets confused which changings to keep and which to discard.
+        </p>
+        <div style="text-align: center;">
+            <img src="src/conflict.png" alt="merge conflict" style="height: 200px; width: 500px;">
+            <img src="src/txtconflict.png" alt="txt conflict" style="height: 200px; width: 400px;">
+        </div>
+        <h3>&emsp;&emsp;Resolve merge conflict</h3>
+        <p>
+            We can manually delete or keep the changings that we want in our file. For example, we resolve this
+            conflict by deleting extra lines and fialize the following txt file.
+        </p>
+        <div style="text-align: center;"><img src="src/resolved.png" alt="resolved" style="height: 300px; width: 600px;"></div>
+        <p>
+            Now, if we go to another local repository and pull all the changings done remotely, we can see that
+            both local repositories will have same data.
+        </p>
+        <div style="text-align: center;">
+            <img src="src/resolved1.png" alt="another resolve" style="height: 300px; width: 450px;">
+            <img src="src/resolved2.png" alt="git resolve" style="height: 300px; width: 450px;">
+        </div>
+
         <!-- about-------------------------------------------- -->
         <div id="about-author">
             <h2>About me</h2>

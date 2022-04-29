@@ -1,11 +1,11 @@
 body{
-    background-color: whitesmoke;
-    /* font-family:'Courier New', Courier, monospace; */
-    /* font-family: cursive; */
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* background-color: whitesmoke; */
+    font-family:'Courier New', Courier, monospace;
+    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-p,div{
-    /* font-size: 14px; */
+main p,div{
+    /* font-size: 18px; */
 }
 /* header -------------------------------------- */
 header{
@@ -79,7 +79,7 @@ header, footer{
     justify-content: space-around;
 }
 .footer-div1 .links{
-    width: 300px;
+    width: 320px;
     margin-bottom: 20px;
 }
 .links:first-child{
