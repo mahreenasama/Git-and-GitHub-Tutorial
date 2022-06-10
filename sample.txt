@@ -6,4 +6,4 @@ Table of contents:
 3) Installation of git
 4) test material
 5) merge conflict resolved
-6) git operations and command
+6) git operations and commands
