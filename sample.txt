@@ -1,6 +1,6 @@
 Table of contents:
 
-1) What is Version Control S2(VCS)?
+1) What is Version Control s2(VCS)?
 2) What is Git and GitHub
 3) create new repository
 3) Installation of git
