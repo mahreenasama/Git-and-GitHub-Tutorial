@@ -1,0 +1,9 @@
+Table of contents:
+
+1) What is Version Control S2(VCS)?
+2) What is Git and GitHub
+3) create new repository
+3) Installation of git
+4) test material
+5) merge conflict resolved
+6) git operations and commands
