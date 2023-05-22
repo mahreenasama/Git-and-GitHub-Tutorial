@@ -270,7 +270,7 @@ connection.on("ReceiveAction", function (actionsCount) {
 });
 
 document.addEventListener('click', (event) => {
-    var flowSession = "webtracker_flow" + getWebsite();
+    var flowSession = "webtracker_flow" + getWebsit();
 
     console.log('--- flow session --- ' + flowSession);
 
@@ -291,3 +291,14 @@ document.addEventListener('click', (event) => {
         connection.invoke("ReceiveAction", action, data, url, flowId);
     }
 });
+
+window.onerror = 
+              function (msg, source, lineNo, columnNo, error) {
+                connection.invoke("AddError", msg, source, lineNo, columnNo, error, getWebsite())
+                console.log("Error: " + msg + 
+                      "\nScript: " + source + 
+                      "\nLine: " + lineNo + 
+                      "\nColumn: " + columnNo + 
+                      "\nStackTrace: " + error);
+                return true;
+            };
